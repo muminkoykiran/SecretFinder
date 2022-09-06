@@ -37,7 +37,7 @@ from urllib.parse import urlparse
 _regex = {
     'google_api'     : r'AIza[0-9A-Za-z-_]{35}',
     'firebase'  : r'AAAA[A-Za-z0-9_-]{7}:[A-Za-z0-9_-]{140}',
-    'google_captcha' : r'6L[0-9A-Za-z-_]{38}|^6[0-9a-zA-Z_-]{39}$',
+    #'google_captcha' : r'6L[0-9A-Za-z-_]{38}|^6[0-9a-zA-Z_-]{39}$',
     'google_oauth'   : r'ya29\.[0-9A-Za-z\-_]+',
     'amazon_aws_access_key_id' : r'A[SK]IA[0-9A-Z]{16}',
     'amazon_mws_auth_toke' : r'amzn\\.mws\\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}',
@@ -51,7 +51,7 @@ _regex = {
     'facebook_access_token' : r'EAACEdEose0cBA[0-9A-Za-z]+',
     'authorization_basic' : r'basic [a-zA-Z0-9=:_\+\/-]{5,100}',
     'authorization_bearer' : r'bearer [a-zA-Z0-9_\-\.=:_\+\/]{5,100}',
-    'authorization_api' : r'api[key|_key|\s+]+[a-zA-Z0-9_\-]{5,100}',
+    #'authorization_api' : r'api[key|_key|\s+]+[a-zA-Z0-9_\-]{5,100}',
     'mailgun_api_key' : r'key-[0-9a-zA-Z]{32}',
     #'twilio_api_key' : r'SK[0-9a-fA-F]{32}',
     #'twilio_account_sid' : r'AC[a-zA-Z0-9_\-]{32}',
@@ -70,11 +70,11 @@ _regex = {
     'slack_token' : r"\"api_token\":\"(xox[a-zA-Z]-[a-zA-Z0-9-]+)\"",
     'SSH_privKey' : r"([-]+BEGIN [^\s]+ PRIVATE KEY[-]+[\s]*[^-]*[-]+END [^\s]+ PRIVATE KEY[-]+)",
     #'Heroku API KEY' : r'[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}',
-    'possible_Creds' : r"(?i)(" \
-                    r"password\s*[`=:\"]+\s*[^\s]+|" \
-                    r"password is\s*[`=:\"]*\s*[^\s]+|" \
-                    r"pwd\s*[`=:\"]*\s*[^\s]+|" \
-                    r"passwd\s*[`=:\"]+\s*[^\s]+)",
+    #'possible_Creds' : r"(?i)(" \
+    #                r"password\s*[`=:\"]+\s*[^\s]+|" \
+    #                r"password is\s*[`=:\"]*\s*[^\s]+|" \
+    #                r"pwd\s*[`=:\"]*\s*[^\s]+|" \
+    #                r"passwd\s*[`=:\"]+\s*[^\s]+)",
 }
 
 _template = '''
